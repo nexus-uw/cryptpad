@@ -6,7 +6,8 @@
     "express": "~4.10.1",
     "ws": "^1.0.1",
     "nthen": "~0.1.0",
-    "bower":"~1.7.9"
+    "bower":"~1.7.9",
+    "tweetnacl": "~0.12.2"
   },
   "devDependencies": {
     "jshint": "~2.9.1",
@@ -18,6 +19,6 @@
       "test": "node TestSelenium.js",
       "style": "lessc ./customize.dist/src/cryptpad.less > ./customize.dist/main.css && lessc ./customize.dist/src/alertify.less > ./customize.dist/alertify.css && lessc ./customize.dist/src/toolbar.less > ./customize.dist/toolbar.css",
       "template": "cd customize.dist/src && node build.js",
-    "postinstall":"bower install --allow-root"
+      "postinstall":"bower install --allow-root"
   }
 }
